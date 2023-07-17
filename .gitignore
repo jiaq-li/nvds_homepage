@@ -1,7 +1,7 @@
-_edit/
+# Created by https://www.gitignore.io/api/jekyll
+### Jekyll ###
 _site/
 .sass-cache/
-*.DS_Store
-.idea
-*.swp
-.Trashes
+.jekyll-cache/
+.jekyll-metadata
+# End of https://www.gitignore.io/api/jekyll
