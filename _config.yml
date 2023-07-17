@@ -1,97 +1,86 @@
-# WhatATheme
-markdown: kramdown
+# Basic
+title: 郑璟泓
+subtitle: 个人站
+description: 保持理智 相信未来
+# 头像里面的标题
+avatarTitle: Deep Zheng
+# 头像里面的描述
+avatarDesc: 什么都不会
+#url: ""
 
-# URL of the Site
-url: ''
-# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+# 博客是否自动生成目录，false为不生成
+enableToc: true
 
-# Title of the Site
-title: What A Theme
-# Description of the Site
-description: A customizable Jekyll portfolio theme
-# URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
-# Keywords of the Site
-site-keywords: Site, Template, Theme
-# URL for the Image of custom Favicon
-favicon-url: 
+# Comment
+comment:
+    #valine:
+    #    el: '#comment'
+    #    enable: true
+    #    appid: mdY50s5ByJYIg98RP6YM38gb-9Nh9j0Va
+     #   appkey: 2h90kQfmYL7Au8Ap0mcfrMaz
+    #    notify: false
+    #    vefify: false
+    #    placeholder: qwq 老铁，说两句呗
+    #    avatar: wavatar
+     #   guest_info: nick,mail
+    #    pageSize: 10
+# Social
+social:
+    #weibo: 
+    github: deepzheng
+    qq: 871121301
+    # zhihu: 
+    # juejin: xxx
+    #jianshu: 
+    # twitter: 
+    mail: deepzheng@hust.edu.cn
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 
-# Social Media and Contact
-# If you don't want to use any icon, you can leave them blank.
-email: thedevslot@gmail.com
-facebook_username: thedevslot
-twitter_username: thedevslot
-instagram_username: thedevslot
-linkedin_username: thedevslot
-github_username:  thedevslot
-youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: 8ba1c6be0953b6f9c2ba38e57f615421  
 
 # Google Analytics
-google-analytics: UA-163806439-1
+# 使用博客模板请去掉或者更换 id
+ga:
+    id: UA-84134159-3  
+    host: auto  
 
-# Disqus
-disqus-shortname: thedevslot
 
-# Name of the Author
-author-name: TheDevsLot
-# URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
-# 60 Words About the Author
-author-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit. Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
-# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
 
-# SASS
-sass:
-  sass_dir: _sass
-  style: compressed
 
-# Build settings
-plugins:
-  - jekyll-admin
-  - jekyll-feed
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
 
-# Permalink
-permalink: "blog/:title"
+textColor: #FF0000
 
-# Compress
-compress_html:
-  clippings: all
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
 
-# Defaults
-defaults:
-  -
-    scope:
-      type: 'posts'
-    values:
-      layout: post
-      post-image: ""
-      description: ""
-      tags:
-        - ""
-  -
-    scope:
-      type: 'pages'
-    values:
-      layout: page
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
 
-# Exclude
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    #- {title: 技术支持, description: support, url: '/support'}      
+    - {title: 关于我, description: about, url: '/about'}   
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
+
+
